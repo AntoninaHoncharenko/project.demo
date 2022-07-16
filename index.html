@@ -72,21 +72,30 @@
         <form class="product-form">
           <ul class="product-form__list list">
             <li class="product-form__item">
-              <p class="product-form__text">ice cream</p>
+              <div class="product-form__wrap">
+              <img class="product-form__img" src="./image/home-pic1.png" alt="icecrem" width="80" height="80">
+              <p class="product-form__text icecream-text">ice cream</p>
+              </div>
               <label class="product-form__label"
-                ><input type="number" value="0" min="0" max="100"
+                ><input class="product-form__input" type="number" value="0" min="0" max="100"
               /></label>
             </li>
             <li class="product-form__item">
-              <p class="product-form__text">ice coffee</p>
+              <div class="product-form__wrap">
+              <img class="product-form__img" src="./image/home-pic2.png" alt="coffee" width="80" height="80">
+              <p class="product-form__text coffee-text">ice coffee</p>
+              </div>
               <label class="product-form__label"
-                ><input type="number" value="0" min="0" max="100"
+                ><input class="product-form__input" type="number" value="0" min="0" max="100"
               /></label>
             </li>
             <li class="product-form__item">
-              <p class="product-form__text">milkshake</p>
+              <div class="product-form__wrap">
+              <img class="product-form__img" src="./image/home-pic3.png" alt="milkshake" width="80" height="80">
+              <p class="product-form__text milkshake-text">milkshake</p>
+              </div>
               <label class="product-form__label"
-                ><input type="number" value="0" min="0" max="100"
+                ><input class="product-form__input" type="number" value="0" min="0" max="100"
               /></label>
             </li>
           </ul>
@@ -95,15 +104,13 @@
             role="group"
             aria-labelledby="your-city"
           >
-            <p id="your-city">Your city</p>
+            <p id="your-city" class="product-form__group-title">Your city</p>
             <label for="city" class="product-form__btn-label">Chicago</label>
             <input type="radio" name="city" value="Chicago" checked />
-
             <label for="city" class="product-form__btn-label"
               >Los Angeles</label
             >
             <input type="radio" name="city" value="LosAngeles" />
-
             <label for="city" class="product-form__btn-label">New York</label>
             <input type="radio" name="city" value="NewYork" />
           </div>
