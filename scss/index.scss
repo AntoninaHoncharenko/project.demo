@@ -72,8 +72,14 @@ img {
   overflow-y: scroll;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal-product {
-  max-height: 800px;
+  height: 580px;
   width: 95vw;
   max-width: 425px;
   padding: 20px;
@@ -87,9 +93,9 @@ img {
   border-radius: 10px;
 }
 
-// .backdrop.is-hidden .modal-product {
-//   transform: translate(-50%, -50%) scale(0);
-// }
+.backdrop.is-hidden .modal-product {
+  transform: translate(-50%, -50%) scale(0);
+}
 
 .modal-product__close-btn {
   border: none;
@@ -280,19 +286,6 @@ img {
 .product-form__btn-input:checked + .product-form__btn-label::before {
   border-color: #000000;
   background-color: #d41443;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .product-form__field-list {
