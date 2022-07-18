@@ -187,16 +187,8 @@ img {
 }
 
 .product-form__group {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.product-form__btn-label {
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
-  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .product-form__group-title {
@@ -209,7 +201,7 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .product-form__group-list {
@@ -229,6 +221,52 @@ img {
 
 .product-form__btn-input {
   margin-bottom: 4px;
+}
+
+.product-form__btn-label {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+}
+.product-form__btn-label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 110%;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+.product-form__btn-label:hover::before, .product-form__btn-label:focus::before {
+  border-color: #d41443;
+}
+
+.product-form__btn-input:focus + .product-form__btn-label::before {
+  border-color: #d41443;
+}
+
+.product-form__btn-input:checked + .product-form__btn-label::before {
+  border-color: #000000;
+  background-color: #d41443;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .product-form__field-list {
