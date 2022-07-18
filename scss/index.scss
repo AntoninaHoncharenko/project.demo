@@ -75,6 +75,7 @@ img {
 .modal-product {
   max-height: 800px;
   width: 95vw;
+  max-width: 425px;
   padding: 20px;
   position: absolute;
   top: 50%;
@@ -112,6 +113,9 @@ img {
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 75px;
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 .product-form__list {
@@ -128,12 +132,6 @@ img {
 .product-form__wrap {
   margin-bottom: 7px;
 }
-
-// .product-form__img {
-//   position: absolute;
-//   max-width: 100%;
-//   bottom: 80%;
-// }
 
 .product-form__item {
   position: relative;
@@ -158,6 +156,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
 }
 
 .modal-img {
@@ -215,6 +217,10 @@ img {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .product-form__group-list {
@@ -244,6 +250,10 @@ img {
   color: #000000;
   display: inline-block;
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 
   &::before {
     content: "";
@@ -299,6 +309,10 @@ img {
   font-size: 14px;
   line-height: 1.52;
   color: #d41443;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .product-form__input-product {
@@ -314,6 +328,10 @@ img {
   color: #d41443;
   text-align: center;
   outline: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .product-form__input {
@@ -328,6 +346,10 @@ img {
   line-height: 1.76;
   color: #d41443;
   outline: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .modal-product__btn {
