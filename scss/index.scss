@@ -128,11 +128,11 @@ img {
   margin-bottom: 7px;
 }
 
-.product-form__img {
-  position: absolute;
-  max-width: 100%;
-  bottom: 80%;
-}
+// .product-form__img {
+//   position: absolute;
+//   max-width: 100%;
+//   bottom: 80%;
+// }
 
 .product-form__item {
   position: relative;
@@ -142,8 +142,9 @@ img {
   border-radius: 7px;
   display: block;
   width: 100%;
-  height: 40px;
+  height: 50px;
   margin-top: auto;
+  margin-bottom: 10px;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -156,6 +157,28 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-img {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  position: absolute;
+  bottom: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-icecream {
+  background-image: url(../image/home-pic1.png);
+}
+
+.img-icecoffee {
+  background-image: url(../image/home-pic2.png);
+}
+
+.img-milkshake {
+  background-image: url(../image/home-pic3.png);
 }
 
 .icecream-text {
