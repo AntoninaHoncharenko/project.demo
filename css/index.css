@@ -92,6 +92,7 @@ img {
   right: 8px;
   display: block;
   outline: transparent;
+  color: #d41443;
 }
 
 .modal-product__title {
@@ -187,6 +188,15 @@ img {
 
 .product-form__group {
   margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.product-form__btn-label {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: #000000;
 }
 
 .product-form__group-title {
@@ -200,4 +210,73 @@ img {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 8px;
+}
+
+.product-form__field-list {
+  margin-bottom: 20px;
+}
+
+.product-form__field-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.product-form__form-label {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: #d41443;
+}
+
+.product-form__input-product {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 5px 10px;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.76;
+  color: #d41443;
+  text-align: center;
+  outline: none;
+}
+
+.product-form__input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 5px 10px;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.76;
+  color: #d41443;
+  outline: none;
+}
+
+.modal-product__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  outline: none;
+  padding: 0;
+  border-radius: 22px;
+  background: #d41443;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */

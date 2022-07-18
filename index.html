@@ -75,21 +75,21 @@
                 <span class="img-icecream modal-img"></span>
               <p class="product-form__text icecream-text">ice cream</p>
               <label class="product-form__label"
-                ><input class="product-form__input" type="number" value="0" min="0" max="100"
+                ><input class="product-form__input-product" type="number" value="0" min="0" max="100"
               /></label>
             </li>
             <li class="product-form__item">
               <span class="img-icecoffee modal-img"></span>
               <p class="product-form__text coffee-text">ice coffee</p>
               <label class="product-form__label"
-                ><input class="product-form__input" type="number" value="0" min="0" max="100"
+                ><input class="product-form__input-product" type="number" value="0" min="0" max="100"
               /></label>
             </li>
             <li class="product-form__item">
               <span class="img-milkshake modal-img"></span>
               <p class="product-form__text milkshake-text">milkshake</p>
               <label class="product-form__label"
-                ><input class="product-form__input" type="number" value="0" min="0" max="100"
+                ><input class="product-form__input-product" type="number" value="0" min="0" max="100"
               /></label>
             </li>
           </ul>
@@ -100,15 +100,16 @@
           >
             <p id="your-city" class="product-form__group-title">Your city</p>
             <label for="city" class="product-form__btn-label">Chicago</label>
-            <input type="radio" name="city" value="Chicago" checked />
+            <input type="radio" name="city" value="Chicago" checked class="product-form__btn-input"/>
             <label for="city" class="product-form__btn-label"
               >Los Angeles</label
             >
-            <input type="radio" name="city" value="LosAngeles" />
+            <input type="radio" name="city" value="LosAngeles" class="product-form__btn-input"/>
             <label for="city" class="product-form__btn-label">New York</label>
-            <input type="radio" name="city" value="NewYork" />
+            <input type="radio" name="city" value="NewYork" class="product-form__btn-input"/>
           </div>
-          <div class="product-form__field">
+          <ul class="product-form__field-list list">
+            <li class="product-form__field-item">
             <label for="name" class="product-form__form-label">Name</label>
             <input
               type="text"
@@ -117,10 +118,10 @@
               class="product-form__input"
               required
             />
-          </div>
-          <div class="product-form__field">
+          </li>
+          <li class="product-form__field-item">
             <label for="tel" class="product-form__form-label"
-              >Phone namber</label
+              >Phone number</label
             >
             <input
               type="tel"
@@ -129,8 +130,8 @@
               class="product-form__input"
               required
             />
-          </div>
-          <div class="product-form__field">
+          </li>
+          <li class="product-form__field-item">
             <label for="mail" class="product-form__form-label">E-mail</label>
             <input
               type="email"
@@ -139,8 +140,9 @@
               class="product-form__input"
               required
             />
-          </div>
-          <button type="submit">Buy</button>
+            </li>
+          </ul>
+          <button type="submit" class="modal-product__btn">Buy</button>
           </div>
         </form>
        
